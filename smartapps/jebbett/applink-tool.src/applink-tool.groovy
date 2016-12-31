@@ -132,7 +132,8 @@ def appLink3rdPtyHandler(evt){
 
 def appLinkTestHandler(evt){
 	log.warn "event is ${evt.name}"
-	if(evt.name == "AppLinkTest"){
+    
+	if(evt.value == "Test Event"){
     	state.testEvent = "Latest Test Event: ${new Date(now()).format("dd MMM HH:mm:ss", location.timeZone)}"
     }
 }
